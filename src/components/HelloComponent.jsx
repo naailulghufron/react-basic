@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default function HelloComponent() {
+HelloComponent.defaultProps = {
+    name : "[Sorry] No Name"
+}
+export default function HelloComponent(props) {
+    
     return (
         <div>
-            <h1>Hello Component</h1>
+            <h1>Try to say : {props.name}</h1>
         </div>
     )
 }
