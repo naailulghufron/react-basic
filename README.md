@@ -75,4 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 1. Installation React
 2. StateLess Component & StateFull Component
 3. Props and defautlProps
+4. Child Component
+
 
