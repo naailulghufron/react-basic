@@ -4,7 +4,7 @@ import Cart from '../../components/Cart'
 
 export default class Product1 extends Component {
     state = {
-        order: 5,
+        order: 0,
         name: "Banana"
     }
 
@@ -38,7 +38,7 @@ export default class Product1 extends Component {
                     <input type="text" value={this.state.order} />
                     <button onClick={this.handlePlus}>+</button>
                 </div> */}
-                <Cart onCounterChange={(value) => this.handleCounterChange(value)} />
+                <Cart stateOrder={this.state.order} onCounterChange={(value) => this.handleCounterChange(value)} />
             </div>
         )
     }

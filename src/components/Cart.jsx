@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class Cart extends Component {
     state = {
-        order: 5,
+        order: this.props.stateOrder,
         name: "Banana"
     }
 
