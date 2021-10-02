@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// StateLess Component
+function HelloComponent(){
+  return <h1>Hello SteteLess Component</h1>
+}
+
+// StateFull Component
+class WorldComponent extends React.Component{
+  render(){
+    return <p>World SteteFull Component</p>
+  }
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <WorldComponent />,
   document.getElementById('root')
 );
 
