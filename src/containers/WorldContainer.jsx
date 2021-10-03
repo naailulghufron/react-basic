@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
-import Product1 from './products/Product1'
+import LifeCycle from './LifeCycleComp/LifeCycle'
+// import Product1 from './products/Product1'
 // import HelloComponent from '../components/HelloComponent'
 
 export default class WorldContainer extends Component {
+    state = {
+        showComponent : true
+    }
+    // componentDidMount(){
+    //     setTimeout(() => {
+    //         this.setState({
+    //             showComponent: false
+    //         })
+    //     }, 15000);
+    // }
     render() {
         return (
             <div>
@@ -16,7 +27,12 @@ export default class WorldContainer extends Component {
                 <HelloComponent name="Hello 8"/>
                 <HelloComponent name="Hello 9"/>
                 <HelloComponent/> */}
-                <Product1 />
+                {/* <Product1 /> */}
+                <hr></hr>
+                {
+                    this.state.showComponent ? <LifeCycle /> : null
+                }
+                
             </div>
         )
     }

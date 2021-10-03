@@ -76,5 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 2. StateLess Component & StateFull Component
 3. Props and defautlProps
 4. Child Component
+5. LifeCycleComponent
+
 
 
